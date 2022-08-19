@@ -1,26 +1,154 @@
-html,
-body {
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.react-tel-input [type="tel"]:focus {
+  outline-color: red !important;
+  border-color: black !important;
+  box-shadow: 0px 0px #b0b7c3;
 }
 
-* {
-  box-sizing: border-box;
+select::-ms-expand {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.discount-bg {
+  background: rgba(41, 121, 92, 0.7);
+}
+.fadeInOut {
+  animation: fadeInOut 6s ease-out;
+}
+
+.stackedslideIn {
+  animation: slideIn 1.5s ease-out;
+}
+
+.stackedslideOut {
+  animation: slideOut 1.5s ease-in-out;
+}
+
+.openNav {
+  animation: openNav 0.5s ease-in-out;
+}
+
+.closeNav {
+  display: none;
+  height: 0;
+  opacity: 0;
+  animation: closeNav 0.5s ease-out;
+}
+
+@keyframes openNav {
+  0% {
+    height: 0px;
+    opacity: 0;
   }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    height: 270px;
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  10%,
+  95% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -1500px;
+  }
+  100% {
+    right: 60px;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    right: 60px;
+  }
+  20% {
+    right: -500px;
+  }
+  100% {
+    right: -1500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  @keyframes slideIn {
+    0% {
+      right: -1500px;
+    }
+    100% {
+      right: 30px;
+    }
+  }
+  @keyframes slideOut {
+    0% {
+      right: 30px;
+    }
+    100% {
+      right: -1500px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  @keyframes slideIn {
+    0% {
+      right: -1500px;
+    }
+    100% {
+      right: 20px;
+    }
+  }
+  @keyframes slideOut {
+    0% {
+      right: 20px;
+    }
+    100% {
+      right: -1500px;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../public/fonts/RecoletaAlt-SemiBold.ttf");
+}
+
+@layer base {
+  html,
   body {
-    color: white;
-    background: black;
+    font-family: "Nunito Sans", sans-serif;
   }
 }
