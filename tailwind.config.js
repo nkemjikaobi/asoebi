@@ -1,23 +1,5 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
-  safelist: [
-    {
-      pattern: /bg-/,
-      variants: ["hover"],
-    },
-    {
-      pattern: /text-/,
-      variants: ["hover"],
-    },
-    {
-      pattern: /fill-/,
-      variants: ["hover"],
-    },
-    {
-      pattern: /border-/,
-      variants: ["hover"],
-    },
-  ],
   theme: {
     container: {
       center: true,
@@ -28,9 +10,7 @@ module.exports = {
     },
     screens: {
       mobile: "640px",
-      mobileBelow: { max: "640px" },
       tablet: "768px",
-      tabletBelow: { max: "768px" },
       smallLaptop: "1024px",
       desktop: "1280px",
       bigLaptop: "1440px",

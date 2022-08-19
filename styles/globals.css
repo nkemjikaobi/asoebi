@@ -2,19 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.react-tel-input [type="tel"]:focus {
-  outline-color: red !important;
-  border-color: black !important;
-  box-shadow: 0px 0px #b0b7c3;
 }
 
 select::-ms-expand {
