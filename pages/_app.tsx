@@ -6,12 +6,7 @@ import "nprogress/nprogress.css";
 
 import "../styles/globals.css";
 
-/**
- * App wrapper for the whole application
- * @param {NextComponentType<NextPageContext, any, {}>} Component
- * @param {any} pageProps
- * @return {AppProps}
- */
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   NProgress.configure({
     easing: "ease-out",
@@ -26,3 +21,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 };
 
 export default MyApp;
+
+// /**
+//  * App wrapper for the whole application
+//  * @param {NextComponentType<NextPageContext, any, {}>} Component
+//  * @param {any} pageProps
+//  * @return {AppProps}
+//  */
