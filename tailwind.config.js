@@ -5,8 +5,7 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      nunitoSans: ["Nunito Sans", "sans-serif"],
-      recoleta: ["Recoleta", "cursive"],
+      rubik: ["Rubik", "sans-serif"],
     },
     screens: {
       mobile: "640px",
