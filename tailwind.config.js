@@ -29,16 +29,18 @@ module.exports = {
         64: ["4rem", "4.375rem"],
       },
       colors: {
-        aosebiGreen: {
-          800: "#397A6A",
-        },
         asoebiBlack: {
           800: "#131924",
           900: "#111827",
         },
         asoebiGray: {
+          700: "#666666",
           800: "#7A7A7A",
           900: "#BCBCBC",
+        },
+        asoebiPurple: {
+          100: "#DCCBFF",
+          900: "#8C52FF",
         },
       },
       width: {
