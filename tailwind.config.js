@@ -32,6 +32,14 @@ module.exports = {
         aosebiGreen: {
           800: "#397A6A",
         },
+        asoebiBlack: {
+          800: "#131924",
+          900: "#111827",
+        },
+        asoebiGray: {
+          800: "#7A7A7A",
+          900: "#BCBCBC",
+        },
       },
       width: {
         600: "600px",
