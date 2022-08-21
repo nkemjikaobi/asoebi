@@ -6,7 +6,7 @@ const DesktopNavigation = () => {
   return (
     <div className="flex items-center justify-between px-16 shadow-lg h-[4.375rem] bg-white">
       <div className="flex items-center">
-        <h4 className="text-asoebiBlack-900 font-bold text-18">LOGO</h4>
+        <h4 className="text-asoebiBlack-900 text-18">LOGO</h4>
         <div className="flex items-center space-x-2 ml-8">
           <Icon name="browse" />
           <span className="text-14 font-normal">Browse Category</span>
