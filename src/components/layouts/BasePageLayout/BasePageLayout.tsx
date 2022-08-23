@@ -1,6 +1,8 @@
 import Head from "next/head";
 import React from "react";
 
+import AsoebiCoreValues from "@components/AsoebiCoreValues/AsoebiCoreValues";
+
 import DesktopFooter from "@layouts/Footer/DesktopFooter/DesktopFooter";
 import DesktopNavigation from "@layouts/NavBar/DesktopNavigation/DesktopNavigation";
 
@@ -31,6 +33,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           </>
         )}
         <main className="h-auto">{children}</main>
+        <AsoebiCoreValues />
         {showFooter && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full">
