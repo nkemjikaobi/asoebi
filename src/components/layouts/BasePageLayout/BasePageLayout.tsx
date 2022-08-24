@@ -1,6 +1,11 @@
 import Head from "next/head";
 import React from "react";
 
+import AsoebiCoreValues from "@components/AsoebiCoreValues/AsoebiCoreValues";
+import CustomBreadCrumb from "@components/atoms/CustomBreadCrumb/CustomBreadCrumb";
+
+import { IBreadCrumb } from "@dto/IBreadCrumb";
+
 import DesktopFooter from "@layouts/Footer/DesktopFooter/DesktopFooter";
 import DesktopNavigation from "@layouts/NavBar/DesktopNavigation/DesktopNavigation";
 
@@ -11,9 +16,10 @@ interface BasePageLayout {
   title?: string;
   description?: string;
   keywords?: string;
+  breadcrumbs?: Array<IBreadCrumb>;
 }
 
-const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords }: BasePageLayout) => {
+const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords, breadcrumbs }: BasePageLayout) => {
   return (
     <div>
       <Head>
@@ -30,7 +36,14 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             </div>
           </>
         )}
-        <main className="h-auto">{children}</main>
+        <div className="px-[4.5rem] bigLaptop:px-[9rem] pt-6 pb-2">
+          <CustomBreadCrumb breadCrumbs={breadcrumbs} />
+        </div>
+        <hr />
+        <main className="h-auto px-[4.5rem] bigLaptop:px-[9rem]">{children}</main>
+        <div className="">
+          <AsoebiCoreValues />
+        </div>
         {showFooter && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full">
@@ -49,6 +62,7 @@ BasePageLayout.defaultProps = {
   title: "My Asoebi",
   description: "",
   keywords: "asoebi, ankara, material, weddings",
+  breadcrumbs: [],
 };
 
 export default BasePageLayout;

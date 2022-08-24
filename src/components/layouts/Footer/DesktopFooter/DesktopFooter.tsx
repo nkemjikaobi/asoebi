@@ -1,7 +1,7 @@
 import React from "react";
 
 import Icon from "@components/atoms/Icons";
-import FooterOptions from "@components/FooterOptions.tsx/FooterOptions";
+import FooterOptions from "@components/FooterOptions/FooterOptions";
 
 import { About } from "@componentData/Footer/About";
 import { Buying } from "@componentData/Footer/Buying";
@@ -10,7 +10,7 @@ import { Selling } from "@componentData/Footer/Selling";
 const DesktopFooter = () => {
   return (
     <>
-      <div className="bg-black px-64 py-8 text-white grid grid-cols-4 gap-4">
+      <div className="bg-black px-16  bigLaptop:px-64 py-8 text-white grid grid-cols-4 gap-4">
         <FooterOptions options={About} title="about myasoebi" />
         <FooterOptions options={Buying} title="buying on myasoebi" />
         <FooterOptions options={Selling} title="sell on myasoebi" />

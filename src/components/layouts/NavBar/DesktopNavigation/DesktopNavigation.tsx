@@ -1,13 +1,17 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 import Icon from "@components/atoms/Icons";
 
 const DesktopNavigation = () => {
+  const router = useRouter();
   return (
     <div className="flex items-center justify-between px-16 shadow-lg h-[4.375rem] bg-white">
       <div className="flex items-center">
-        <h4 className="text-asoebiBlack-900 text-18">LOGO</h4>
-        <div className="flex items-center space-x-2 ml-8">
+        <h4 className="text-asoebiBlack-900 text-18" onClick={() => router.push("/")}>
+          LOGO
+        </h4>
+        <div className="flex items-center space-x-2 bigLaptop:ml-8">
           <Icon name="browse" />
           <span className="text-14 font-normal">Browse Category</span>
           <Icon className="cursor-pointer" name="caretDown" />
