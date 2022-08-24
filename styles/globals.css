@@ -130,14 +130,9 @@ select::-ms-expand {
   }
 }
 
-@font-face {
-  font-family: "Recoleta";
-  src: url("../public/fonts/RecoletaAlt-SemiBold.ttf");
-}
-
 @layer base {
   html,
   body {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Rubik", sans-serif;
   }
 }

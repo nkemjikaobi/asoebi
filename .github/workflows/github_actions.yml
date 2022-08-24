@@ -1,0 +1,33 @@
+name: Asoebi Workflow
+
+on:
+  push:
+    branches: ["main", "dev"]
+  pull_request:
+    branches: ["main", "dev"]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Packages
+        run: yarn
+
+      - name: Running Formatting
+        run: |
+          yarn format
+          yarn check-format
+
+      - name: Running Linting
+        run: yarn check-lint
+
+      - name: Checking Types
+        run: yarn check-types
+
+      - name: Running Build
+        run: yarn build

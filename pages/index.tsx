@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
 
-import { LoginPage } from "@modules/authPages";
+import BasePageLayout from "@components/layouts/BasePageLayout/BasePageLayout";
+
+import { HomePage } from "@modules/landingPages";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <LoginPage />
-    </div>
+    <BasePageLayout title="Home Page">
+      <HomePage />
+    </BasePageLayout>
   );
 };
 
