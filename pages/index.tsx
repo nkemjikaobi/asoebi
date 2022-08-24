@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 
-import { HomePage } from "@modules/landingPages";
+import { LoginPage } from "@modules/authPages";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <HomePage />
+      <LoginPage />
     </div>
   );
 };

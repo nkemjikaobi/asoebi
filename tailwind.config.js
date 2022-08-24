@@ -33,6 +33,13 @@ module.exports = {
         aosebiGreen: {
           800: "#397A6A",
         },
+        asoebiPurple: {
+          800: "#8C52FF",
+          500: "#F9FAFB",
+        },
+        grey: {
+          500: "#A6A6A6",
+        },
       },
       width: {
         600: "600px",
