@@ -36,12 +36,12 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             </div>
           </>
         )}
-        <div className="px-64 pt-6 pb-2">
+        <div className="px-[4.5rem] bigLaptop:px-[9rem] pt-6 pb-2">
           <CustomBreadCrumb breadCrumbs={breadcrumbs} />
         </div>
         <hr />
-        <main className="h-auto">{children}</main>
-        <div>
+        <main className="h-auto px-[4.5rem] bigLaptop:px-[9rem]">{children}</main>
+        <div className="">
           <AsoebiCoreValues />
         </div>
         {showFooter && (

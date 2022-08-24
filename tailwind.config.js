@@ -12,8 +12,8 @@ module.exports = {
       tablet: "768px",
       smallLaptop: "1024px",
       desktop: "1280px",
-      bigLaptop: "1440px",
-      television: "1536px",
+      normalLaptop: "1440px",
+      bigLaptop: "1536px",
     },
     extend: {
       fontSize: {
@@ -31,6 +31,7 @@ module.exports = {
       colors: {
         asoebiBlack: {
           100: "#5A5F66",
+          300: "##474747",
           700: "#262626",
           800: "#131924",
           900: "#111827",

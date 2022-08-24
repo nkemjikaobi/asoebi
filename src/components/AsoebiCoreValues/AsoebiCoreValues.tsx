@@ -4,7 +4,7 @@ import Icon from "@components/atoms/Icons";
 
 const AsoebiCoreValues = () => {
   return (
-    <div className="grid grid-cols-4 gap-3 px-72 my-8">
+    <div className="grid grid-cols-4 gap-3 px-16 bigLaptop:px-72 mb-16 mt-24">
       {AsoebiCoreValuesData.map((value) => (
         <div className="space-y-4" key={value.id}>
           <Icon name={value.icon} />
