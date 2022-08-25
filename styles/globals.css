@@ -136,3 +136,11 @@ select::-ms-expand {
     font-family: "Rubik", sans-serif;
   }
 }
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+p:hover {
+  cursor: default;
+}
