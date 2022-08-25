@@ -7,8 +7,8 @@ const Login = () => {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen bg-asoebiPurple-500">
       <Icon name="tempLogo" />
-      <form className="w-[368px] h-[432px] pt-[23px] px-[24px] pb-8 mb-4 mt-[31.54px] bg-white rounded-lg border-[1px] border-grey-500">
-        <p className="font-bold text-16 mb-[23px]">Welcome, Login to your account.</p>
+      <form className="w-[368px] h-[432rem] pt-[23rem] px-[24px] pb-8 mb-4 mt-[31.54px] bg-white rounded-lg border-[1rem] border-asoebiGrey-500">
+        <p className="font-bold text-16 mb-[23rem]">Welcome, Login to your account.</p>
         <div className="mb-4">
           <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
             Email Address
@@ -38,10 +38,10 @@ const Login = () => {
         <button className="w-full py-2 font-bold text-white rounded-lg bg-asoebiPurple-800 hover:bg-blue-700 focus:outline-none focus:shadow-outline" type="button">
           Login
         </button>
-        <div className="text-center mt-[23px]">
+        <div className="text-center mt-[23rem]">
           <p>New to Aso-Ebi</p>
           <Link href="/auth/signup">
-            <p className="text-asoebiPurple-800 mt-[23px]">Create new account</p>
+            <p className="text-asoebiPurple-800 mt-[23rem]">Create new account</p>
           </Link>
         </div>
       </form>

@@ -46,7 +46,7 @@ module.exports = {
           800: "#8C52FF",
           500: "#F9FAFB",
         },
-        grey: {
+        asoebiGrey: {
           500: "#A6A6A6",
         },
       },
