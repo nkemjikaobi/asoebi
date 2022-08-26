@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen bg-asoebiPurple-500">
       <Icon name="tempLogo" />
-      <form className="w-[23rem] h-auto pt-[1.438rem] px-[1.5rem] pb-8 mb-4 mt-[1.971rem] bg-white rounded-lg border-[0.063rem] border-asoebiGrey-500">
+      <form className="w-[23rem] h-auto pt-[1.438rem] px-[1.5rem] pb-8 mb-4 mt-[1.971rem] bg-white rounded-lg border-[0.063rem] border-asoebiGray-500">
         <p className="font-bold text-16 mb-[1.438rem]">Create new account</p>
         <div className="mb-4">
           <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="firstname">

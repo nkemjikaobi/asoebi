@@ -13,7 +13,7 @@ interface CustomBreadCrumbProps {
 }
 const CustomBreadCrumb: FC<CustomBreadCrumbProps> = ({ breadCrumbs }) => {
   return (
-    <div className="flex items-center text-12">
+    <div className="flex items-center text-12 max-w-[90rem] mx-auto pl-[7.375rem] normalLaptop:pl-[12.375rem]">
       {breadCrumbs &&
         Object.entries(breadCrumbs).map(([index, breadCrumb]) => {
           if (parseInt(index) === Object.entries(breadCrumbs).length - 1) {

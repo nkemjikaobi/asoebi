@@ -4,14 +4,16 @@ import Icon from "@components/atoms/Icons";
 
 const AsoebiCoreValues = () => {
   return (
-    <div className="grid grid-cols-4 gap-3 px-16 bigLaptop:px-72 mb-16 mt-24">
-      {AsoebiCoreValuesData.map((value) => (
-        <div className="space-y-4" key={value.id}>
-          <Icon name={value.icon} />
-          <h3 className="font-medium text-asoebiBlack-700">{value.name}</h3>
-          <p className="text-asoebiBlack-100 text-14 w-3/4">{value.body}</p>
-        </div>
-      ))}
+    <div className="mb-16 mt-24">
+      <div className="max-w-[90rem] mx-auto grid grid-cols-4 gap-3 pl-[7.25rem] pr-[8.813rem] normalLaptop:pl-[17.25rem] normalLaptop:pr-[18.813rem]">
+        {AsoebiCoreValuesData.map((value) => (
+          <div className="space-y-4 w-[12.375rem] px-2" key={value.id}>
+            <Icon name={value.icon} />
+            <h3 className="font-medium text-asoebiBlack-700">{value.name}</h3>
+            <p className="text-asoebiBlack-100 text-14 ">{value.body}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
