@@ -8,7 +8,7 @@ import ProductListings from "@components/organisms/ProductListingPages/ProductLi
 import { IProduct } from "@dto/IProduct";
 
 export const ProductListingPage: FC = () => (
-  <div className="pt-16">
+  <div className="pt-16 bg-asoebiGray-100">
     <div className="h-[15.75rem] bigLaptop:h-[18.75rem] relative">
       <Image layout="fill" src="/images/png/banner.png" />
     </div>
@@ -22,7 +22,7 @@ export const ProductListingPage: FC = () => (
       </div>
     </div>
     <div className="flex mt-8">
-      <div className="w-[14.75rem] bg-gray-300 rounded-[0.25rem] mr-6 shrink-0 grow-0 basis-auto">
+      <div className="w-[14.75rem] bg-white rounded-[0.25rem] mr-6 shrink-0 grow-0 basis-auto">
         <Filters />
       </div>
       <div className="">

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { ReactNode } from "react";
 
 import AsoebiCoreValues from "@components/AsoebiCoreValues/AsoebiCoreValues";
 import CustomBreadCrumb from "@components/atoms/CustomBreadCrumb/CustomBreadCrumb";
@@ -10,7 +10,7 @@ import DesktopFooter from "@layouts/Footer/DesktopFooter/DesktopFooter";
 import DesktopNavigation from "@layouts/NavBar/DesktopNavigation/DesktopNavigation";
 
 interface BasePageLayout {
-  children: any;
+  children: ReactNode;
   showNavigation?: boolean;
   showFooter?: boolean;
   title?: string;
@@ -28,7 +28,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         <meta content={keywords} name="keywords" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <section className="smallLaptop:px-0">
+      <section className="smallLaptop:px-0 smallLaptop:bg-asoebiGray-100">
         {showNavigation && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:sticky smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
@@ -36,12 +36,12 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             </div>
           </>
         )}
-        <div className="px-[4.5rem] bigLaptop:px-[9rem] pt-6 pb-2">
+        <div className="pt-6 pb-2">
           <CustomBreadCrumb breadCrumbs={breadcrumbs} />
         </div>
         <hr />
-        <main className="h-auto px-[4.5rem] bigLaptop:px-[9rem]">{children}</main>
-        <div className="">
+        <main className="h-auto px-[7.25rem] max-w-[90rem] mx-auto pl-[7.375rem] normalLaptop:pl-[12.375rem]">{children}</main>
+        <div>
           <AsoebiCoreValues />
         </div>
         {showFooter && (
