@@ -40,7 +40,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           <CustomBreadCrumb breadCrumbs={breadcrumbs} />
         </div>
         <hr />
-        <main className="h-auto px-[7.25rem] max-w-[90rem] mx-auto">{children}</main>
+        <main className="h-auto px-[7.25rem] max-w-[90rem] mx-auto pl-[7.375rem] normalLaptop:pl-[12.375rem]">{children}</main>
         <div>
           <AsoebiCoreValues />
         </div>
