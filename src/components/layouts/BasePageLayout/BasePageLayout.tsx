@@ -36,11 +36,15 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             </div>
           </>
         )}
-        <div className="pt-6 pb-2">
-          <CustomBreadCrumb breadCrumbs={breadcrumbs} />
-        </div>
+        {breadcrumbs && breadcrumbs?.length > 0 && (
+          <>
+            <div className="pt-6 pb-2">
+              <CustomBreadCrumb breadCrumbs={breadcrumbs} />
+            </div>
+          </>
+        )}
         <hr />
-        <main className="h-auto px-[7.25rem] max-w-[90rem] mx-auto pl-[7.375rem] normalLaptop:pl-[12.375rem]">{children}</main>
+        <main className="h-auto px-[7.25rem] max-w-[90rem] mx-auto pl-[7.375rem] normalLaptop:pl-[12.375rem] overflow-x-hidden">{children}</main>
         <div>
           <AsoebiCoreValues />
         </div>

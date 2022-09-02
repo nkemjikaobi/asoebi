@@ -1,4 +1,5 @@
 module.exports = {
+  important: true,
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
@@ -48,8 +49,14 @@ module.exports = {
         },
         asoebiPurple: {
           100: "#DCCBFF",
+          200: "#6D7280",
+          300: "#F5F0FF",
+          400: "#9865FC",
           800: "#8C52FF",
           500: "#F9FAFB",
+        },
+        asoebiWhite: {
+          100: "#FFF",
         },
       },
       width: {
