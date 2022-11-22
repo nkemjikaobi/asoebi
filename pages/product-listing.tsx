@@ -7,7 +7,7 @@ import { ProductListingPage } from "@modules/productListingPages";
 const ProductListing: NextPage = () => {
   const breadCrumb = [{ text: "Home", url: "/" }, { text: "Owanbe", url: "/" }, { text: "Satin Asoebi" }];
   return (
-    <BasePageLayout breadcrumbs={breadCrumb} title="Product Listing Page">
+    <BasePageLayout breadcrumbs={breadCrumb} showCoreValues={true} title="Product Listing Page">
       <ProductListingPage />
     </BasePageLayout>
   );

@@ -17,9 +17,10 @@ interface BasePageLayout {
   description?: string;
   keywords?: string;
   breadcrumbs?: Array<IBreadCrumb>;
+  showCoreValues?: boolean;
 }
 
-const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords, breadcrumbs }: BasePageLayout) => {
+const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords, breadcrumbs, showCoreValues }: BasePageLayout) => {
   return (
     <div>
       <Head>
@@ -44,10 +45,12 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           </>
         )}
         <hr />
-        <main className="h-auto px-[7.25rem] max-w-[90rem] mx-auto pl-[7.375rem] normalLaptop:pl-[12.375rem] overflow-x-hidden">{children}</main>
-        <div>
-          <AsoebiCoreValues />
-        </div>
+        <main className="h-auto px-4 smallLaptop:px-[7.25rem] max-w-[90rem] mx-auto smallLaptop:pl-[7.375rem] normalLaptop:pl-[12.375rem] overflow-x-hidden">{children}</main>
+        {showCoreValues && (
+          <div>
+            <AsoebiCoreValues />
+          </div>
+        )}
         {showFooter && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full">
@@ -67,6 +70,7 @@ BasePageLayout.defaultProps = {
   description: "",
   keywords: "asoebi, ankara, material, weddings",
   breadcrumbs: [],
+  showCoreValues: false,
 };
 
 export default BasePageLayout;

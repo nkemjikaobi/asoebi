@@ -9,7 +9,7 @@ const DesktopNavigation = () => {
     <div className=" shadow-lg h-[4.375rem] bg-white">
       <div className="max-w-[90rem] mx-auto flex items-center justify-between pl-[2.281rem] pr-[4.563rem] h-full">
         <div className="flex items-center ">
-          <h4 className="text-asoebiBlack-900 text-18 mr-[2.344rem]" onClick={() => router.push("/")}>
+          <h4 className="text-asoebiBlack-900 text-18 mr-[2.344rem] cursor-pointer" onClick={() => router.push("/")}>
             LOGO
           </h4>
           <div className="flex items-center normalLaptop:space-x-2">
@@ -34,7 +34,7 @@ const DesktopNavigation = () => {
           </div>
         </div>
         <div className="flex items-center">
-          <Icon name="shoppingBag" />
+          <Icon className="cursor-pointer" name="shoppingBag" onClick={() => router.push("/cart")} />
           <div className="flex items-center space-x-2 ml-8">
             <Icon name="user" />
             <span className="text-14 font-normal">Account</span>

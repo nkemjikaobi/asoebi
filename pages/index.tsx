@@ -6,7 +6,7 @@ import { HomePage } from "@modules/landingPages";
 
 const Home: NextPage = () => {
   return (
-    <BasePageLayout title="Home Page">
+    <BasePageLayout showCoreValues={true} title="Home Page">
       <HomePage />
     </BasePageLayout>
   );

@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { FC } from "react";
 
 import Icon from "@components/atoms/Icons";
-import Filters from "@components/organisms/ProductListingPages/Filters/Filters";
-import ProductListings from "@components/organisms/ProductListingPages/ProductListings/ProductListings";
+import Filters from "@components/organisms/ProductListingPage/Filters/Filters";
+import ProductListings from "@components/organisms/ProductListingPage/ProductListings/ProductListings";
 
 import { IProduct } from "@dto/IProduct";
 
