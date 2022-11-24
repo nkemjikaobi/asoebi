@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import ProductListingCard from "@components/organisms/ProductListingPages/ProductListingCard/ProductListingCard";
+import ProductListingCard from "@components/organisms/ProductListingPage/ProductListingCard/ProductListingCard";
 
 import { IProduct } from "@dto/IProduct";
 

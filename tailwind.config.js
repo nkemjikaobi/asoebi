@@ -1,6 +1,11 @@
 module.exports = {
-  important: true,
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
+  safelist: [
+    {
+      pattern: /bg-/,
+      variants: ["hover", "focus"],
+    },
+  ],
   theme: {
     container: {
       center: true,
@@ -40,6 +45,13 @@ module.exports = {
         asoebiGray: {
           50: "#DBDBDB",
           100: "#FCFCFC",
+          120: "#F2F2F2",
+          130: "#F6F6F6",
+          140: "#EDEAEC",
+          150: "#8D99AE",
+          160: "#F1F1F1",
+          170: "#DCE0E3",
+          180: "#838383",
           200: "#F5F5F5",
           300: "#929292",
           500: "#A6A6A6",
@@ -49,11 +61,17 @@ module.exports = {
         },
         asoebiPurple: {
           100: "#DCCBFF",
+          120: "#B793FF",
           200: "#6D7280",
           300: "#F5F0FF",
           400: "#9865FC",
-          800: "#8C52FF",
           500: "#F9FAFB",
+          600: "#9661FF",
+          800: "#8C52FF",
+        },
+        asoebiYellow: {
+          100: "#FFF2DB",
+          400: "#C78200",
         },
         asoebiWhite: {
           100: "#FFF",
@@ -62,6 +80,9 @@ module.exports = {
       width: {
         600: "600px",
         500: "500px",
+      },
+      boxShadow: {
+        tags: "0px 0px 8px rgba(0, 0, 0, 0.3)",
       },
     },
   },
