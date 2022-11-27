@@ -9,6 +9,8 @@ import { IBreadCrumb } from "@dto/IBreadCrumb";
 import DesktopFooter from "@layouts/Footer/DesktopFooter/DesktopFooter";
 import DesktopNavigation from "@layouts/NavBar/DesktopNavigation/DesktopNavigation";
 
+import MobileNavigation from "../NavBar/MobileNavigation/MobileNavigation";
+
 interface BasePageLayout {
   children: ReactNode;
   showNavigation?: boolean;
@@ -34,6 +36,9 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           <>
             <div className="hidden smallLaptop:block smallLaptop:sticky smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
               <DesktopNavigation />
+            </div>
+            <div className="block sticky w-full top-0 z-50 smallLaptop:hidden">
+              <MobileNavigation />
             </div>
           </>
         )}

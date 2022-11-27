@@ -1,24 +1,34 @@
+import { useRouter } from "next/router";
 import React, { FC } from "react";
 
 import Icon from "@components/atoms/Icons";
 import CartItems from "@components/organisms/CartPage/CartItems/CartItems";
 import MobileCartItems from "@components/organisms/CartPage/MobileCartItems/MobileCartItems";
 
-export const CartPage: FC = () => (
-  <div className="mb-[665px]">
-    <h3 className="text-18 smallLaptop:text-24 mt-[36px] mb-[23px]">Inside My Cart</h3>
-    <div className="flex items-center py-2 smallLaptop:py-[11.5px] pl-[34px] bg-asoebiYellow-100 h-[50px] smallLaptop:h-[40px] mb-[16px] mt-[23px] w-full">
-      <Icon name="warn" />
-      <span className="ml-[13px] text-14 text-asoebiYellow-400">Please set your preferred price and ownership type</span>
+export const CartPage: FC = () => {
+  const router = useRouter();
+  return (
+    <div className="mb-[41.563rem]">
+      <div className="flex items-center mb-[1.719rem] mt-[3.049rem] smallLaptop:hidden">
+        <Icon className="cursor-pointer mr-[1.081rem]" name="chevronLeft" />
+        <span className="text-14" onClick={() => router.back()}>
+          Continue Shopping
+        </span>
+      </div>
+      <h3 className="text-18 smallLaptop:text-24 mt-[2.25rem] mb-[1.438rem]">Inside My Cart</h3>
+      <div className="flex items-center py-2 smallLaptop:py-[0.719rem] pl-[2.125rem] bg-asoebiYellow-100 h-[3.125rem] smallLaptop:h-[2.5rem] mb-4 mt-[1.438rem] w-full">
+        <Icon name="warn" />
+        <span className="ml-[0.813rem] text-14 text-asoebiYellow-400">Please set your preferred price and ownership type</span>
+      </div>
+      <div className="hidden smallLaptop:block">
+        <CartItems cartItemsData={cartItemsData} />
+      </div>
+      <div className="block smallLaptop:hidden">
+        <MobileCartItems cartItemsData={cartItemsData} />
+      </div>
     </div>
-    <div className="hidden smallLaptop:block">
-      <CartItems cartItemsData={cartItemsData} />
-    </div>
-    <div className="block smallLaptop:hidden">
-      <MobileCartItems cartItemsData={cartItemsData} />
-    </div>
-  </div>
-);
+  );
+};
 
 const cartItemsData = [
   {
