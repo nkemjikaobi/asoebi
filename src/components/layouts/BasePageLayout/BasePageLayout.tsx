@@ -3,10 +3,10 @@ import React, { ReactNode } from "react";
 
 import AsoebiCoreValues from "@components/AsoebiCoreValues/AsoebiCoreValues";
 import CustomBreadCrumb from "@components/atoms/CustomBreadCrumb/CustomBreadCrumb";
+import Footer from "@components/layouts/Footer/Footer/Footer";
 
 import { IBreadCrumb } from "@dto/IBreadCrumb";
 
-import DesktopFooter from "@layouts/Footer/DesktopFooter/DesktopFooter";
 import DesktopNavigation from "@layouts/NavBar/DesktopNavigation/DesktopNavigation";
 
 import MobileNavigation from "../NavBar/MobileNavigation/MobileNavigation";
@@ -58,8 +58,8 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         )}
         {showFooter && (
           <>
-            <div className="hidden smallLaptop:block smallLaptop:w-full">
-              <DesktopFooter />
+            <div>
+              <Footer />
             </div>
           </>
         )}

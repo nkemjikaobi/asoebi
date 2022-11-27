@@ -8,7 +8,7 @@ import MobileCartItems from "@components/organisms/CartPage/MobileCartItems/Mobi
 export const CartPage: FC = () => {
   const router = useRouter();
   return (
-    <div className="mb-[41.563rem]">
+    <div className="mb-12">
       <div className="flex items-center mb-[1.719rem] mt-[3.049rem] smallLaptop:hidden">
         <Icon className="cursor-pointer mr-[1.081rem]" name="chevronLeft" />
         <span className="text-14" onClick={() => router.back()}>
