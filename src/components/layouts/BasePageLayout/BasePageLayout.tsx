@@ -44,7 +44,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         )}
         {breadcrumbs && breadcrumbs?.length > 0 && (
           <>
-            <div className="pt-6 pb-2">
+            <div className="hidden smallLaptop:block pt-6 pb-2">
               <CustomBreadCrumb breadCrumbs={breadcrumbs} />
             </div>
           </>

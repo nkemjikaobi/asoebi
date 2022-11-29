@@ -44,6 +44,7 @@ module.exports = {
         },
         asoebiGray: {
           50: "#DBDBDB",
+          60: "#E2E2E2",
           100: "#FCFCFC",
           120: "#F2F2F2",
           130: "#F6F6F6",
