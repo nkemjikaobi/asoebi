@@ -204,3 +204,10 @@ progress::-webkit-progress-value {
   background-color: #8c52ff;
   border-radius: 0.5rem;
 }
+
+#upload {
+  background-position: top, right, bottom, left;
+  background-size: 40px 1px, 1px 40px, 40px 1px, 1px 40px;
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-color: #f5f9fc;
+}

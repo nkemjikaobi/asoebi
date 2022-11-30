@@ -8,7 +8,7 @@ const PricingFilter = () => {
   return (
     <ParentFilter title="price">
       <div>
-        <CustomRadioButton labelClassName="font-light text-[0.813rem]" options={PricingFilterData} parentClassName="space-y-4" />
+        <CustomRadioButton labelClassName="font-light text-13" options={PricingFilterData} parentClassName="space-y-4" />
       </div>
     </ParentFilter>
   );

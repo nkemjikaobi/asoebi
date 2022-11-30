@@ -37,7 +37,9 @@ module.exports = {
       colors: {
         asoebiBlack: {
           100: "#5A5F66",
-          300: "##474747",
+          200: "#3E3E3E",
+          300: "#474747",
+          500: "#151515",
           700: "#262626",
           800: "#131924",
           900: "#111827",
@@ -53,11 +55,14 @@ module.exports = {
           160: "#F1F1F1",
           170: "#DCE0E3",
           180: "#838383",
+          190: "#6C757D",
           200: "#F5F5F5",
+          201: "#A9A9A9",
           300: "#929292",
           500: "#A6A6A6",
           700: "#666666",
           800: "#7A7A7A",
+          850: "#5F5F5F",
           900: "#BCBCBC",
         },
         asoebiPurple: {
@@ -72,7 +77,9 @@ module.exports = {
         },
         asoebiYellow: {
           100: "#FFF2DB",
+          200: "#FAE3B9",
           400: "#C78200",
+          400: "#FBA400",
         },
         asoebiWhite: {
           100: "#FFF",
@@ -84,6 +91,7 @@ module.exports = {
       },
       boxShadow: {
         tags: "0px 0px 8px rgba(0, 0, 0, 0.3)",
+        orderSummary: "0px 0px 8px rgba(0, 0, 0, 0.1)",
       },
     },
   },
