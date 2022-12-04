@@ -103,7 +103,7 @@ const CartItems: React.FC<CartItemsProps> = ({ cartItemsData }) => {
           <CustomTable columns={columns} data={finalCartData} tableClass="border-spacing-y-2 border-separate !mt-4" tdClass="!py-4 !p-1" thClass="!py-4 !p-1" />
           <div className="flex items-center justify-end">
             <CustomButton
-              customClass="mt-12 !text-[0.813rem] mr-8"
+              customClass="mt-12 !text-13 mr-8"
               handleClick={() => {}}
               isTransparent={true}
               size={ButtonProperties.SIZES.small}
@@ -112,7 +112,7 @@ const CartItems: React.FC<CartItemsProps> = ({ cartItemsData }) => {
               variant={ButtonProperties.VARIANT.primary.name}
             />
             <CustomButton
-              customClass="mt-12 !text-[0.813rem]"
+              customClass="mt-12 !text-13"
               handleClick={() => {}}
               size={ButtonProperties.SIZES.small}
               title="Proceed to Booking"

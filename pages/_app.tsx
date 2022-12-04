@@ -2,6 +2,8 @@ import type { AppProps } from "next/app";
 import Router from "next/router";
 import NProgress from "nprogress";
 import React from "react";
+import { Toaster } from "react-hot-toast";
+
 import "nprogress/nprogress.css";
 
 import "../styles/globals.css";
@@ -22,7 +24,20 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   Router.events.on("routeChangeComplete", () => NProgress.done());
   Router.events.on("routeChangeError", () => NProgress.done());
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          // Default options for specific types
+          custom: {
+            duration: 3000,
+          },
+        }}
+      />
+      <Component {...pageProps} />
+    </>
+  );
 };
 
 export default MyApp;

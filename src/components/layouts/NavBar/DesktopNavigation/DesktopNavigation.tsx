@@ -6,7 +6,7 @@ import Icon from "@components/atoms/Icons";
 const DesktopNavigation = () => {
   const router = useRouter();
   return (
-    <div className=" shadow-lg h-[4.375rem] bg-white">
+    <div className="shadow-lg h-[4.375rem] bg-white">
       <div className="max-w-[90rem] mx-auto flex items-center justify-between pl-[2.281rem] pr-[4.563rem] h-full">
         <div className="flex items-center ">
           <h4 className="text-asoebiBlack-900 text-18 mr-[2.344rem] cursor-pointer" onClick={() => router.push("/")}>

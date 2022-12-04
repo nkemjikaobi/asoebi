@@ -1,33 +1,43 @@
-import Image from "next/image";
 import React, { FC } from "react";
 
-import Icon from "@components/atoms/Icons";
+import CustomButton from "@components/atoms/CustomButton/CustomButton";
+import DesktopSubDetails from "@components/organisms/ProductListingPage/DesktopSubDetails/DesktopSubDetails";
 import Filters from "@components/organisms/ProductListingPage/Filters/Filters";
+import MobileSubDetails from "@components/organisms/ProductListingPage/MobileSubDetails/MobileSubDetails";
 import ProductListings from "@components/organisms/ProductListingPage/ProductListings/ProductListings";
 
 import { IProduct } from "@dto/IProduct";
 
+import { ButtonProperties } from "@shared/libs/helpers";
+
 export const ProductListingPage: FC = () => (
   <div className="pt-16 bg-asoebiGray-100">
-    <div className="h-[15.75rem] bigLaptop:h-[18.75rem] relative">
-      <Image layout="fill" src="/images/png/banner.png" />
-    </div>
-    <div className="flex justify-between items-center px-8 mt-6">
-      <h3 className="font-medium">6,112 styles found</h3>
-      <div className="flex items-center">
-        <p className="mr-2 font-medium">
-          Sort By: <span className="font-normal">Popularity</span>
-        </p>
-        <Icon className="cursor-pointer" name="caretDown" />
-      </div>
-    </div>
+    <DesktopSubDetails />
+    <MobileSubDetails />
     <div className="flex mt-8">
-      <div className="w-[14.75rem] bg-white rounded-[0.25rem] mr-6 shrink-0 grow-0 basis-auto">
+      <div className="hidden smallLaptop:block w-[14.75rem] bg-white rounded-[0.25rem] mr-6 shrink-0 grow-0 basis-auto">
         <Filters />
       </div>
       <div className="">
         <ProductListings products={ProductListingCardsData} />
       </div>
+    </div>
+    <div className="mb-6 smallLaptop:hidden flex items-center justify-center">
+      <p className="text-14 mb-4 mt-6 text-center">You’ve viewed 72 of 200 products</p>
+      <progress className="ml-2 text-center" max="100" value="40">
+        40%
+      </progress>
+    </div>
+    <div className="smallLaptop:hidden flex items-center justify-center">
+      <CustomButton
+        customClass="w-[90%] tablet:w-[75%] !text-asoebiPurple-800 uppercase"
+        handleClick={() => {}}
+        isTransparent={true}
+        size={ButtonProperties.SIZES.small}
+        title="load more"
+        type="submit"
+        variant={ButtonProperties.VARIANT.primary.name}
+      />
     </div>
   </div>
 );

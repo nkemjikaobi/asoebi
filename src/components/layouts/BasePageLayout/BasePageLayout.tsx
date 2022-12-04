@@ -3,11 +3,13 @@ import React, { ReactNode } from "react";
 
 import AsoebiCoreValues from "@components/AsoebiCoreValues/AsoebiCoreValues";
 import CustomBreadCrumb from "@components/atoms/CustomBreadCrumb/CustomBreadCrumb";
+import Footer from "@components/layouts/Footer/Footer/Footer";
 
 import { IBreadCrumb } from "@dto/IBreadCrumb";
 
-import DesktopFooter from "@layouts/Footer/DesktopFooter/DesktopFooter";
 import DesktopNavigation from "@layouts/NavBar/DesktopNavigation/DesktopNavigation";
+
+import MobileNavigation from "../NavBar/MobileNavigation/MobileNavigation";
 
 interface BasePageLayout {
   children: ReactNode;
@@ -35,11 +37,14 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             <div className="hidden smallLaptop:block smallLaptop:sticky smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
               <DesktopNavigation />
             </div>
+            <div className="block sticky w-full top-0 z-50 smallLaptop:hidden">
+              <MobileNavigation />
+            </div>
           </>
         )}
         {breadcrumbs && breadcrumbs?.length > 0 && (
           <>
-            <div className="pt-6 pb-2">
+            <div className="hidden smallLaptop:block pt-6 pb-2">
               <CustomBreadCrumb breadCrumbs={breadcrumbs} />
             </div>
           </>
@@ -53,8 +58,8 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         )}
         {showFooter && (
           <>
-            <div className="hidden smallLaptop:block smallLaptop:w-full">
-              <DesktopFooter />
+            <div>
+              <Footer />
             </div>
           </>
         )}
