@@ -16,10 +16,9 @@ class MyDocument extends Document {
         <Head>
           <link href="https://fonts.googleapis.com" rel="preconnect" />
           <link href="https://fonts.gstatic.com" rel="preconnect" />
-          <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
-          <script async defer src="https://accounts.google.com/gsi/client" />
+          <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap" rel="stylesheet" />
         </Head>
-        <body className="font-nunitoSans box-border">
+        <body className="font-rubik box-border">
           <Main />
           <NextScript />
         </body>

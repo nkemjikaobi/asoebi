@@ -16,14 +16,30 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
     "@types/nprogress": "^0.2.0",
+    "@types/react-copy-to-clipboard": "^5.0.4",
+    "@types/react-datepicker": "^4.8.0",
+    "@types/react-star-ratings": "^2.3.0",
+    "@types/react-table": "^7.7.12",
+    "@types/uuid": "^8.3.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import-helpers": "^1.2.1",
+    "formik": "^2.2.9",
     "next": "12.2.5",
     "nprogress": "^0.2.0",
     "prettier": "^2.7.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.6.0",
+    "react-star-ratings": "^2.3.0",
+    "react-table": "^7.8.0",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",
