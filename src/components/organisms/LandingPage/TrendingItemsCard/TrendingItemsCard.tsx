@@ -8,8 +8,8 @@ interface ProductListingCardProps {
 }
 const TrendingItemsCard: FC<ProductListingCardProps> = ({ product }) => {
   return (
-    <div className="w-[14.75rem] mb-4 cursor-pointer">
-      <div className="w-[14.75rem] h-[20.625rem] bigLaptop:h-[23.75rem] relative rounded-[0.25rem]">
+    <div className="smallLaptop:w-[14.75rem] mb-4 cursor-pointer">
+      <div className="smallLaptop:w-[14.75rem] mr-2 h-[15.5rem] tablet:h-[20.625rem] bigLaptop:h-[23.75rem] relative rounded-[0.25rem]">
         <Image layout="fill" src={product.productImage} />
       </div>
       <div className="space-y-2">

@@ -11,6 +11,7 @@ import { IProduct } from "@dto/IProduct";
 export const HomePage: FC = () => (
   <>
     <HeroSection />
+    {/* <WholeSale /> */}
     <TrendingItems products={ProductListingCardsData} />
     <TopProducts />
     <Banner />

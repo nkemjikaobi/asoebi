@@ -7,7 +7,9 @@ import { BookingSummaryPage } from "@modules/bookingSummaryPages";
 const BookingSummary: NextPage = () => {
   return (
     <BasePageLayout title="Booking Summary Page">
-      <BookingSummaryPage />
+      <div className="max-w-[90rem] mx-auto">
+        <BookingSummaryPage />
+      </div>
     </BasePageLayout>
   );
 };
