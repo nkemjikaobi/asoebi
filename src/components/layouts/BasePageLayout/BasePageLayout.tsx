@@ -50,7 +50,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           </>
         )}
         <hr />
-        <main className="h-auto px-4 smallLaptop:px-[7.25rem] max-w-[90rem] mx-auto smallLaptop:pl-[7.375rem] normalLaptop:pl-[12.375rem] overflow-x-hidden">{children}</main>
+        <main className="h-auto px-4 smallLaptop:px-[7.25rem] overflow-x-hidden">{children}</main>
         {showCoreValues && (
           <div>
             <AsoebiCoreValues />

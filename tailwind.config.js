@@ -58,6 +58,7 @@ module.exports = {
           190: "#6C757D",
           200: "#F5F5F5",
           201: "#A9A9A9",
+          202: "#6D7280",
           300: "#929292",
           500: "#A6A6A6",
           700: "#666666",
@@ -68,11 +69,11 @@ module.exports = {
         asoebiPurple: {
           100: "#DCCBFF",
           120: "#B793FF",
-          200: "#6D7280",
           300: "#F5F0FF",
           400: "#9865FC",
           500: "#F9FAFB",
           600: "#9661FF",
+          700: "#6314FF",
           800: "#8C52FF",
         },
         asoebiYellow: {
@@ -83,6 +84,7 @@ module.exports = {
         },
         asoebiWhite: {
           100: "#FFF",
+          200: "rgba(255, 255, 255, 0.8)",
         },
       },
       width: {

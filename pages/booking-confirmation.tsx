@@ -7,7 +7,9 @@ import { BookingConfirmationPage } from "@modules/bookingConfirmationPages";
 const BookingConfirmation: NextPage = () => {
   return (
     <BasePageLayout title="Booking Confirmation Page">
-      <BookingConfirmationPage />
+      <div className="max-w-[90rem] mx-auto">
+        <BookingConfirmationPage />
+      </div>
     </BasePageLayout>
   );
 };

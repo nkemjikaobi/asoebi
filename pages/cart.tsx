@@ -7,7 +7,9 @@ import { CartPage } from "@modules/cartPages";
 const Cart: NextPage = () => {
   return (
     <BasePageLayout title="Cart Page">
-      <CartPage />
+      <div className="max-w-[90rem] mx-auto">
+        <CartPage />
+      </div>
     </BasePageLayout>
   );
 };
